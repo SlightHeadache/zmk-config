@@ -52,7 +52,7 @@
       bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR                &none         &none         &kp PSCRN     &kp SLCK    &kp PAUSE_BREAK   &none
         &none         &none           &none           &none           &none           &none                     &none         &none         &kp INSERT    &kp HOME    &kp PG_UP         &none
-        &none         &none           &none           &none           &none           &none       &kp C_MUTE    &bootloader   &reset        &kp DEL       &kp END     &kp PG_DN         &none
+        &none         &none           &none           &none           &none           &none       &kp C_MUTE    &bootloader   &kp C_RESET   &kp DEL       &kp END     &kp PG_DN         &none
                                       &trans          &trans          &trans          &trans                    &trans        &trans        &trans        &trans
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
