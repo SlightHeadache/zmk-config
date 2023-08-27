@@ -1,0 +1,10 @@
+file_format: "1"
+id: choctopus44
+name: Choctopus44v2
+type: shield
+url: https://github.com/SlightHeadache/choctopus44
+requires:
+  - pro_micro
+features:
+  - keys
+  - encoder
