@@ -33,7 +33,7 @@
         &trans    &kp KP_PLUS  &kp KP_N7     &kp KP_N8   &kp KP_N9   &kp KP_MINUS                         &kp N6              &kp N7            &kp N8      &kp N9      &kp N0    &trans
         &trans    &kp KP_N0    &kp KP_N4     &kp KP_N5   &kp KP_N6   &kp KP_MULTIPLY                      &kp F7              &kp F8            &kp F9      &kp F10     &kp F11   &trans
         &trans    &kp KP_DOT   &kp KP_N1     &kp KP_N2   &kp KP_N3   &kp KP_DIVIDE    &kp C_PLAY_PAUSE    &kp LS(NON_US_HASH) &kp NON_US_HASH   &kp EQUAL   &kp GRAVE   &trans    &trans
-                               &kp KP_COMMA  &trans      &trans      &trans                               &trans              &mo 3             &trans      &trans
+                               &kp KP_NLCK  &trans      &trans      &trans                               &trans              &mo 3             &trans      &trans
       >;
       sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
     };
