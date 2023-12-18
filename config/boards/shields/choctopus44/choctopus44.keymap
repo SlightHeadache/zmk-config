@@ -23,9 +23,9 @@
         &mt LALT TAB     &kp Q     &kp W       &kp E     &kp R    &kp T                    &kp Y     &kp U     &kp I      &kp O    &kp P     &mt RALT BSLH
         &mt LCTRL RET    &kp A     &kp S       &kp D     &kp F    &kp G                    &kp H     &kp J     &kp K      &kp L    &kp SEMI  &mt RCTRL SQT
         &kp LSHFT        &kp Z     &kp X       &kp C     &kp V    &kp B      &bootloader   &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT 
-                                   &kp ESC     &mo 2  &mo 1    &kp SPACE                   &kp BSPC  &mo 2     &kp RGUI   &kp RALT
+                                   &kp ESC     &mo 2  &mo 1    &kp SPACE                   &kp BSPC  &mo 2     &kp RGUI   &kp CAPS
       >;
-      sensor-bindings = <&inc_dec_kp UP DOWN>;
+      sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
     };
 
     lower_layer {
@@ -35,15 +35,15 @@
         &trans    &kp KP_DOT   &kp KP_N1     &kp KP_N2   &kp KP_N3   &kp KP_DIVIDE    &kp CAPS            &kp LBRC    &kp EXCL    &kp AT_SIGN  &kp HASH     &kp RBRC    &trans
                                &kp KP_NLCK   &mo 3       &trans      &trans                               &trans      &mo 3       &kp GRAVE    &kp TILDE
       >;
-      sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+      sensor-bindings = <&inc_dec_kp UP DOWN>;
     };
 
     raise_layer {
       bindings = <
-        &trans      &kp RA(N8)        &kp RA(N9)            &kp UP                &kp LS(N8)  &kp LS(N9)                &kp LS(FSLH)          &kp FSLH          &kp UP      &kp RBKT    &kp LS(RBKT)    &kp RA(RBKT)
-        &kp GRAVE   &kp LS(EQUAL)     &kp LEFT              &kp DOWN              &kp RIGHT   &kp EQUAL                 &kp RA(MINUS)         &kp LEFT          &kp DOWN    &kp RIGHT   &kp LS(MINUS)   &kp RA(N4)
-        &trans      &kp NON_US_BSLH   &kp LS(NON_US_BSLH)   &kp RA(NON_US_BSLH)   &kp RA(N7)  &kp RA(N0)   &kp C_MUTE   &kp LS(NON_US_HASH)   &kp NON_US_HASH   &kp LS(N5)  &kp LS(N6)  &kp LS(N7)      &trans
-                                      &trans                &trans                &mo 3       &trans                    &trans                &trans            &trans      &trans
+        &trans      &kp F1    &kp F2   &kp F3   &kp F4   &kp LS(N9)                     &kp LS(FSLH)          &kp F13    &kp F14    &kp F15   &kp F16    &trans
+        &trans      &kp F5    &kp F6   &kp F7   &kp F8   &kp EQUAL                      &kp RA(MINUS)         &kp F17    &kp F18    &kp F19   &kp F20    &trans
+        &trans      &kp F9    &kp F10  &kp F11  &kp F12  &kp F1            &kp C_MUTE   &kp LS(NON_US_HASH)   &kp F21    &kp F22    &kp F23   &kp F24    &trans
+                    &trans    &trans   &mo 3    &trans                                  &trans                &trans            &trans      &trans
       >;
       sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
     };
@@ -52,7 +52,7 @@
       bindings = <
         &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &bt BT_CLR                &none         &none         &kp PSCRN     &kp SLCK    &kp PAUSE_BREAK   &none
         &none         &none           &none           &none           &none           &none                     &none         &none         &kp INSERT    &kp HOME    &kp PG_UP         &none
-        &none         &none           &none           &none           &none           &none       &kp C_MUTE    &bootloader   &sys_reset        &kp DEL       &kp END     &kp PG_DN         &none
+        &none         &none           &none           &none           &none           &none       &kp C_MUTE    &bootloader   &sys_reset    &kp DEL       &kp END     &kp PG_DN         &none
                                       &trans          &trans          &trans          &trans                    &trans        &trans        &trans        &trans
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
